@@ -6,7 +6,7 @@ import sys
 
 path = ''
 path = easygui.fileopenbox(msg = "选择要复读的图片", filetypes = ["*.gif", "*.jpg", "*.png"])
-if path == '':
+if path == '': #如输入的路径为空，则退出程序
     sys.exit()
 
 #判断输入文件类型
